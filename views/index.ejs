@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplod gambar</title>		
+</head>
+<body>	
+	<form method="post" enctype="multipart/form-data" action="/">									
+		<input type="file" name="gambar">									
+		<input type="submit" class="btn btn-primary">					
+	</form>		
+	<% for (var i = 0; i < data.length; i++) { %>
+	<img src="<%= data[i].path %>">					
+	<% } %>		
+</body>
+</html>
